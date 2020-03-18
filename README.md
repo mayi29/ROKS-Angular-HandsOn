@@ -66,9 +66,9 @@ oc project <projectname>
 
 _6.	Clone el repositorio de la aplicación que se desea desplegar._
 
-_**App de hello Word en angular:** https://github.com/emeloibmco/AngularHelloWorld _
+_**App de hello Word en angular:** https://github.com/emeloibmco/AngularHelloWorld_
 
-_**App de listas en angular:** https://github.com/emeloibmco/AngularWebList _
+_**App de listas en angular:** https://github.com/emeloibmco/AngularWebList_
 
 _7.	Desde el Shell de IBM cloud digitar el comando:_
 
