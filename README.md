@@ -90,9 +90,21 @@ npx nodeshift --strictSSL=false --dockerImage=nodeshift/ubi8-s2i-web-app --image
 ```
 
 _El resultado de este comando va a ser una respuesta de este tipo, que nos indica que 
-la aplicación se desplego correctamente.
+la aplicación se desplego correctamente._
 
-_
+<img width="865" alt="2" src="https://user-images.githubusercontent.com/60987042/76918560-9441a500-6894-11ea-954f-62c8076b8903.PNG">
+
+_10.	Para poder acceder al la URL de la aplicación y realizar la verificación de la misma debemos:_
+_•	Acceder a IBM cloud._
+_•	Dirigirse al resource list._
+_•	Dirigirse a la sección de clusters._
+_• 	Ingresar al cluster que lleva por nombre openshift.311._
+_•	Ingrese a la sección de openshift web console._
+_•	Buscar el proyecto que creo con sus iniciales y buscar la aplicación que se desplego._
+
+
+
+
 ### Pre-requisitos 📋
 
 _Que cosas necesitas para instalar el software y como instalarlas_
