@@ -56,7 +56,7 @@ https://cloud.ibm.com/
 _•	Diríjase al resource list._
 _Primero debe dar clic en el navigation menu y luego donde dice Resource list, como se puede ver en la siguiente imagen:_
 
-<img width="957" alt="6" src="https://user-images.githubusercontent.com/60987042/76995646-2b9f0a80-691e-11ea-9ee3-320af04665ce.PNG">
+<img width="696" alt="7" src="https://user-images.githubusercontent.com/60987042/76996077-da434b00-691e-11ea-92be-558da48f7d97.PNG">
 
 
 _•	Diríjase a la sección de clústers y dar clic en el que se desea acceder._
@@ -230,7 +230,7 @@ https://cloud.ibm.com/
 _•	Diríjase al resource list._
 _Primero debe dar clic en el navigation menu y luego donde dice Resource list, como se puede ver en la siguiente imagen:_
 
-<img width="957" alt="6" src="https://user-images.githubusercontent.com/60987042/76995646-2b9f0a80-691e-11ea-9ee3-320af04665ce.PNG">
+<img width="696" alt="7" src="https://user-images.githubusercontent.com/60987042/76996077-da434b00-691e-11ea-92be-558da48f7d97.PNG">
 
 
 _•	Diríjase a la sección de clústers y dar clic en el que se desea acceder._
