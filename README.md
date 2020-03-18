@@ -41,10 +41,15 @@ oc login https://c100-e.us-east.containers.cloud.ibm.com:31320 --token=xn9VJ1Nhr
 _**NOTA: Este comando es único para acceder al cluster que lleva por nombre openshift3.11 el cual se dispuso para el desarrollo de este laboratorio.**_
 
 _Si se desea acceder a otro clúster que tengamos aprovisionado en nuestra cuenta de IBM Cloud se deben realizar los siguientes pasos:_
+
 _•	Ingresar a la plataforma de IBM cloud con sus credenciales de inicio de sesión._
+
 _•	Diríjase al resource list._
+
 _•	Diríjase a la sección de clústers y dar clic en el que se desea acceder._
+
 _•	Se da clic en el botón OpenShift web console._
+
 _•	Ahora en la parte superior derecha se da clic sobre el ID del correo con el que ingresamos y luego en la sección que dice Copy Login Command._
 
 
@@ -76,11 +81,12 @@ _7.	Desde el Shell de IBM cloud digitar el comando:_
 Git clone <url_repositorio>
 ```
 _8.	Dirigirse desde a esta carpeta con el comando:_
-_	Para la carpeta del proyecto Hello word:_
+
+_•	Para la carpeta del proyecto Hello word:_
 ```
 cd AngularHelloWorld
 ```
-	Para la carpeta del proyecto listas.
+•	Para la carpeta del proyecto listas.
 ```
 cd AngularWebList
 ```
@@ -95,14 +101,20 @@ la aplicación se desplego correctamente._
 <img width="865" alt="2" src="https://user-images.githubusercontent.com/60987042/76918560-9441a500-6894-11ea-954f-62c8076b8903.PNG">
 
 _10.	Para poder acceder al la URL de la aplicación y realizar la verificación de la misma debemos:_
-_•	Acceder a IBM cloud._
-_•	Dirigirse al resource list._
-_•	Dirigirse a la sección de clusters._
-_• 	Ingresar al cluster que lleva por nombre openshift.311._
-_•	Ingrese a la sección de openshift web console._
-_•	Buscar el proyecto que creo con sus iniciales y buscar la aplicación que se desplego._
 
+_•Acceder a IBM cloud._
 
+_•Dirigirse al resource list._
+
+_•Dirigirse a la sección de clusters._
+
+_•Ingresar al cluster que lleva por nombre openshift.311._
+
+_•Ingrese a la sección de openshift web console._
+
+_•Buscar el proyecto que creo con sus iniciales y buscar la aplicación que se desplego._
+
+<img width="789" alt="3" src="https://user-images.githubusercontent.com/60987042/76919117-f222bc80-6895-11ea-835e-cb689f2b61bb.PNG">
 
 
 ### Pre-requisitos 📋
