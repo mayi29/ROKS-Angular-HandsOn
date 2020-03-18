@@ -15,7 +15,7 @@ _1.	Inicie sesión desde la consola de IBM Cloud Shell, para hacerlo utilizamos 
 ```
 ibmcloud login --sso
 ```
-_Al digitar el comando anterior nos aparece una pregunta la cual debemos responder con yna **Y**_
+_Al digitar el comando anterior nos aparece una pregunta la cual debemos responder con una **Y**_
 
 _En este momneto nos pide un codigo de seguridad, el cual debemos obtener en el siguiente link y pegarlo en la consola de IBM Cloud Shell._
 ```
