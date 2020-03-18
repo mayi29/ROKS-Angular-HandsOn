@@ -116,6 +116,9 @@ _•Buscar el proyecto que creo con sus iniciales y buscar la aplicación que se
 
 <img width="789" alt="3" src="https://user-images.githubusercontent.com/60987042/76919117-f222bc80-6895-11ea-835e-cb689f2b61bb.PNG">
 
+_Y por último solo faltaría dar clic en el link que lo llevara a la aplicación desplegada._
+
+
 
 ### Pre-requisitos 📋
 
