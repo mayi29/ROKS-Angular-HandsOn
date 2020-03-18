@@ -6,44 +6,22 @@ _Para el desarrollo de este proyecto se tiene como base el desarrollo de una apl
 
 ## Despliegue en OpenShift desde IBM Cloud shell: 🚀
 
-_Iniciualmente debe acceder al shell de IBM Cloud desde el siguinete link:_
+_Iniciualmente debe acceder a IBM Cloud:_
+
+```
+https://cloud.ibm.com/login
+```
+
+_1.	Inicie sesión desde la consola de IBM Cloud Shell, puede ingresar por medio de la siguiente URL:_
+
 ```
 https://cloud.ibm.com/shell
 ```
-_1.	Inicie sesión desde la consola de IBM Cloud Shell, para hacerlo utilizamos el siguiente comando:_
-
-```
-ibmcloud login --sso
-```
-_Al digitar el comando anterior nos aparece una pregunta la cual debemos responder con una **Y**_
-
-_En este momneto nos pide un codigo de seguridad, el cual debemos obtener en el siguiente link y pegarlo en la consola de IBM Cloud Shell._
-```
-https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode
-```
-_Al digitar el comando anterior nos aparecera una pregunta en la cual debemos indicar el numero perteneciente a la cuenta en la que se va a tranajar._
-
-_2.	Configure el entorno de trabajo. Para esto debe colocar el siguiente comando en la terminal._
-```
-ibmcloud target
-```
-_Si se ve que faltan faltan algunos campos por configurar,  para hacerlo se debe digitar los siguientes comandos._
-```
-ibmcloud target -r us-east -g openshift-workshop
-```
-_y por ultimo digitar el siguiente comando:_
-```
-ibmcloud target --cf
-```
-_Al digitar el comando anterior nos aparecera una pregunta en la cual debemos el numero perteneciente a la organizacion en la que se desea trabajar._
-
-_De este modo damos por terminada la configuración inicial para el despliegue de la aplicación._
 
 
 ## Despliegue 📦
 
-
-_3.	Inicie sesión e ingrese desde la CLI de OpenShift al clúster en el que se va a trabajar._
+_2.	Inicie sesión e ingrese desde la CLI de OpenShift al clúster en el que se va a trabajar._
 
 _Para ingresar al clúster que tengamos aprovisionado en nuestra cuenta de IBM Cloud se deben realizar los siguientes pasos:_
 
@@ -70,30 +48,30 @@ _•	Ahora en la parte superior derecha se da clic sobre el ID del correo con el
 
 _•	Y por último volvemos a la terminal que se estaba utilizando pegamos y damos enter._
 
-_4.	Cree un nuevo proyecto en el cluster de la siguiente manera:_
+_3.	Cree un nuevo proyecto en el cluster de la siguiente manera:_
 ```
 oc new-project <projectname>
 ```
 _**Nota:** Para el **projectname** coloque **openshift + las iniciales de su nombre y apellido.**_
 
-_5.	Acceda al proyecto que acabo de crear de la siguiente manera:_
+_4.	Acceda al proyecto que acabo de crear de la siguiente manera:_
 
 ```
 oc project <projectname>
 ```
 
-_6.	Clone el repositorio de la aplicación que se desea desplegar._
+_5.	Clone el repositorio de la aplicación que se desea desplegar._
 
 _**App de hello Word en angular:** https://github.com/emeloibmco/AngularHelloWorld_
 
 _**App de listas en angular:** https://github.com/emeloibmco/AngularWebList_
 
-_7.	Desde el Shell de IBM cloud digitar el comando:_
+_6.	Desde el Shell de IBM cloud digitar el comando:_
 
 ```
 Git clone <url_repositorio>
 ```
-_8.	Dirigirse desde a esta carpeta con el comando:_
+_7.	Dirigirse desde a esta carpeta con el comando:_
 
 _•	Para la carpeta del proyecto Hello word:_
 ```
@@ -103,7 +81,7 @@ cd AngularHelloWorld
 ```
 cd AngularWebList
 ```
-_9.	Para desplegar la aplicación en OpenShift es necesario escribir el siguiente comando:_
+_8.	Para desplegar la aplicación en OpenShift es necesario escribir el siguiente comando:_
 ```
 npx nodeshift --strictSSL=false --dockerImage=nodeshift/ubi8-s2i-web-app --imageTag=10.x --build.env OUTPUT_DIR=dist/angular-web-app --expose
 ```
@@ -113,7 +91,7 @@ la aplicación se desplego correctamente._
 
 <img width="865" alt="2" src="https://user-images.githubusercontent.com/60987042/76918560-9441a500-6894-11ea-954f-62c8076b8903.PNG">
 
-_10.	Para poder acceder al la URL de la aplicación y realizar la verificación de la misma debemos:_
+_9.	Para poder acceder al la URL de la aplicación y realizar la verificación de la misma debemos:_
 
 _•Acceder a IBM cloud._
 
