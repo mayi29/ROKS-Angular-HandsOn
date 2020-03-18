@@ -39,6 +39,10 @@ _Al digitar el comando anterior nos aparecera una pregunta en la cual debemos el
 
 _De este modo damos por terminada la configuración inicial para el despliegue de la aplicación._
 
+
+## Despliegue 📦
+
+
 _3.	Inicie sesión e ingrese desde la CLI de OpenShift al clúster en el que se va a trabajar._
 
 _Este paso se realiza por medio del siguiente comando:_
@@ -133,45 +137,7 @@ _De esta forma se daría por terminado el despliegue de la aplicación angular e
 
 _Si se desea realizar el mismo despliegue, pero desde la maquina local se deberían seguir los siguientes pasos:_
 
-## Despliegue en OpenShift desde IBM Cloud shell: 🚀
-
-_Iniciualmente debe acceder al shell de IBM Cloud desde el siguinete link:_
-```
-https://cloud.ibm.com/shell
-```
-_1.	Inicie sesión desde la consola de IBM Cloud Shell, para hacerlo utilizamos el siguiente comando:_
-
-```
-ibmcloud login --sso
-```
-_Al digitar el comando anterior nos aparece una pregunta la cual debemos responder con yna **Y**_
-
-_En este momneto nos pide un codigo de seguridad, el cual debemos obtener en el siguiente link y pegarlo en la consola de IBM Cloud Shell._
-```
-https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode
-```
-_Al digitar el comando anterior nos aparecera una pregunta en la cual debemos indicar el numero perteneciente a la cuenta en la que se va a tranajar._
-
-_2.	Configure el entorno de trabajo. Para esto debe colocar el siguiente comando en la terminal._
-```
-ibmcloud target
-```
-_Si se ve que faltan faltan algunos campos por configurar,  para hacerlo se debe digitar los siguientes comandos._
-```
-ibmcloud target -r us-east -g openshift-workshop
-```
-_y por ultimo digitar el siguiente comando:_
-```
-ibmcloud target --cf
-```
-_Al digitar el comando anterior nos aparecera una pregunta en la cual debemos el numero perteneciente a la organizacion en la que se desea trabajar._
-
-_De este modo damos por terminada la configuración inicial para el despliegue de la aplicación._
-
-
-
-
-### Pre-requisitos 📋
+## Pre-requisitos 📋
 
 _Paso 1: Instale IBM Cloud CLI._
 
@@ -205,76 +171,142 @@ https://www.okd.io/download.html
 
 _Para instalarlo debemos descomprimir la carpeta, encontraremos los siguientes archivos:_
 
+<img width="513" alt="5" src="https://user-images.githubusercontent.com/60987042/76979004-60529800-6905-11ea-9830-5d28e2d5c4af.PNG">
 
-
-### Instalación 🔧
-
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
-
-_Dí cómo será ese paso_
+_De estos archivos debemos copiar el que tiene por nombre oc y pegarlo en la carpeta bin que encontramos en la siguiente dirección:_
 
 ```
-Da un ejemplo
+C:\Program Files\IBM\Cloud\bin
 ```
 
-_Y repite_
+## Despliegue en OpenShift desde la consola de su computador (cmd): 🚀
+
+
+_1.	Inicie sesión desde la consola de su computador, para hacerlo utilizamos el siguiente comando:_
 
 ```
-hasta finalizar
+ibmcloud login --sso
 ```
+_Al digitar el comando anterior nos aparece una pregunta la cual debemos responder con yna **Y**_
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
-
+_En este momneto nos pide un codigo de seguridad, el cual debemos obtener en el siguiente link y pegarlo en la consola de su computador._
 ```
-Da un ejemplo
+https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode
 ```
+_Al digitar el comando anterior nos aparecera una pregunta en la cual debemos indicar el numero perteneciente a la cuenta en la que se va a tranajar._
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
-
+_2.	Configure el entorno de trabajo. Para esto debe colocar el siguiente comando en la terminal._
 ```
-Da un ejemplo
+ibmcloud target
 ```
+_Si se ve que faltan faltan algunos campos por configurar,  para hacerlo se debe digitar los siguientes comandos._
+```
+ibmcloud target -r us-east -g openshift-workshop
+```
+_y por ultimo digitar el siguiente comando:_
+```
+ibmcloud target --cf
+```
+_Al digitar el comando anterior nos aparecera una pregunta en la cual debemos el numero perteneciente a la organizacion en la que se desea trabajar._
+
+_De este modo damos por terminada la configuración inicial para el despliegue de la aplicación._
+
 
 ## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
 
-## Construido con 🛠️
+_3.	Inicie sesión e ingrese desde la CLI de OpenShift al clúster en el que se va a trabajar._
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+_Este paso se realiza por medio del siguiente comando:_
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+```
+oc login https://c100-e.us-east.containers.cloud.ibm.com:31320 --token=xn9VJ1NhrWktYArWnBH_e25e6ra3uYCuEQ0ZrFrQ-vA
+```
+_**NOTA: Este comando es único para acceder al cluster que lleva por nombre openshift3.11 el cual se dispuso para el desarrollo de este laboratorio.**_
 
-## Contribuyendo 🖇️
+_Si se desea acceder a otro clúster que tengamos aprovisionado en nuestra cuenta de IBM Cloud se deben realizar los siguientes pasos:_
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+_•	Ingresar a la plataforma de IBM cloud con sus credenciales de inicio de sesión._
 
-## Wiki 📖
+_•	Diríjase al resource list._
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+_•	Diríjase a la sección de clústers y dar clic en el que se desea acceder._
 
-## Versionado 📌
+_•	Se da clic en el botón OpenShift web console._
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
+_•	Ahora en la parte superior derecha se da clic sobre el ID del correo con el que ingresamos y luego en la sección que dice Copy Login Command._
+
+
+<img width="144" alt="1" src="https://user-images.githubusercontent.com/60987042/76917049-53479180-6890-11ea-91a1-b2c2c9213729.PNG">
+
+_•	Y por último volvemos a la terminal que se estaba utilizando pegamos y damos enter._
+
+_4.	Cree un nuevo proyecto en el cluster de la siguiente manera:_
+```
+oc new-project <projectname>
+```
+_**Nota:** Para el **projectname** coloque **openshift + las iniciales de su nombre y apellido.**_
+
+_5.	Acceda al proyecto que acabo de crear de la siguiente manera:_
+
+```
+oc project <projectname>
+```
+
+_6.	Clone el repositorio de la aplicación que se desea desplegar._
+
+_**App de hello Word en angular:** https://github.com/emeloibmco/AngularHelloWorld_
+
+_**App de listas en angular:** https://github.com/emeloibmco/AngularWebList_
+
+_7.	Desde el Shell de IBM cloud digitar el comando:_
+
+```
+Git clone <url_repositorio>
+```
+_8.	Dirigirse desde a esta carpeta con el comando:_
+
+_•	Para la carpeta del proyecto Hello word:_
+```
+cd AngularHelloWorld
+```
+•	Para la carpeta del proyecto listas.
+```
+cd AngularWebList
+```
+_9.	Para desplegar la aplicación en OpenShift es necesario escribir el siguiente comando:_
+```
+npx nodeshift --strictSSL=false --dockerImage=nodeshift/ubi8-s2i-web-app --imageTag=10.x --build.env OUTPUT_DIR=dist/angular-web-app --expose
+```
+
+_El resultado de este comando va a ser una respuesta de este tipo, que nos indica que 
+la aplicación se desplego correctamente._
+
+<img width="865" alt="2" src="https://user-images.githubusercontent.com/60987042/76918560-9441a500-6894-11ea-954f-62c8076b8903.PNG">
+
+_10.	Para poder acceder al la URL de la aplicación y realizar la verificación de la misma debemos:_
+
+_•Acceder a IBM cloud._
+
+_•Dirigirse al resource list._
+
+_•Dirigirse a la sección de clusters._
+
+_•Ingresar al cluster que lleva por nombre openshift.311._
+
+_•Ingrese a la sección de openshift web console._
+
+_•Buscar el proyecto que creo con sus iniciales y buscar la aplicación que se desplego._
+
+<img width="789" alt="3" src="https://user-images.githubusercontent.com/60987042/76919117-f222bc80-6895-11ea-835e-cb689f2b61bb.PNG">
+
+_Y por último solo faltaría dar clic en el link que lo llevara a la aplicación desplegada._
+
+<img width="688" alt="4" src="https://user-images.githubusercontent.com/60987042/76919471-074c1b00-6897-11ea-95c7-e8675b91ec80.PNG">
+
+_De esta forma se daría por terminado el despliegue de la aplicación angular en openshift._
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+_Equipo IBM Cloud Tech sales Colombia_
 
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-<img width="144" alt="1" src="https://user-images.githubusercontent.com/60987042/76917049-53479180-6890-11ea-91a1-b2c2c9213729.PNG">
