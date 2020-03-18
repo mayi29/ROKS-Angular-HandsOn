@@ -133,6 +133,44 @@ _De esta forma se daría por terminado el despliegue de la aplicación angular e
 
 _Si se desea realizar el mismo despliegue, pero desde la maquina local se deberían seguir los siguientes pasos:_
 
+## Despliegue en OpenShift desde IBM Cloud shell: 🚀
+
+_Iniciualmente debe acceder al shell de IBM Cloud desde el siguinete link:_
+```
+https://cloud.ibm.com/shell
+```
+_1.	Inicie sesión desde la consola de IBM Cloud Shell, para hacerlo utilizamos el siguiente comando:_
+
+```
+ibmcloud login --sso
+```
+_Al digitar el comando anterior nos aparece una pregunta la cual debemos responder con yna **Y**_
+
+_En este momneto nos pide un codigo de seguridad, el cual debemos obtener en el siguiente link y pegarlo en la consola de IBM Cloud Shell._
+```
+https://identity-2.us-south.iam.cloud.ibm.com/identity/passcode
+```
+_Al digitar el comando anterior nos aparecera una pregunta en la cual debemos indicar el numero perteneciente a la cuenta en la que se va a tranajar._
+
+_2.	Configure el entorno de trabajo. Para esto debe colocar el siguiente comando en la terminal._
+```
+ibmcloud target
+```
+_Si se ve que faltan faltan algunos campos por configurar,  para hacerlo se debe digitar los siguientes comandos._
+```
+ibmcloud target -r us-east -g openshift-workshop
+```
+_y por ultimo digitar el siguiente comando:_
+```
+ibmcloud target --cf
+```
+_Al digitar el comando anterior nos aparecera una pregunta en la cual debemos el numero perteneciente a la organizacion en la que se desea trabajar._
+
+_De este modo damos por terminada la configuración inicial para el despliegue de la aplicación._
+
+
+
+
 ### Pre-requisitos 📋
 
 _Paso 1: Instale IBM Cloud CLI._
@@ -157,6 +195,18 @@ _Para verificar que las herramientas de desarrollador y la CLI se han instalado 
 ```
 ibmcloud dev help
 ```
+_Paso 3:	Instalar CLI de OpenShift._
+
+_Desde el siguiente link podremos descargar el respectivo instalador._
+
+```
+https://www.okd.io/download.html
+```
+
+_Para instalarlo debemos descomprimir la carpeta, encontraremos los siguientes archivos:_
+
+
+
 ### Instalación 🔧
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
