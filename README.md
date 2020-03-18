@@ -118,16 +118,38 @@ _•Buscar el proyecto que creo con sus iniciales y buscar la aplicación que se
 
 _Y por último solo faltaría dar clic en el link que lo llevara a la aplicación desplegada._
 
+<img width="688" alt="4" src="https://user-images.githubusercontent.com/60987042/76919471-074c1b00-6897-11ea-95c7-e8675b91ec80.PNG">
 
+_De esta forma se daría por terminado el despliegue de la aplicación angular en openshift._
+
+# _ANEXOS._
+
+_Si se desea realizar el mismo despliegue, pero desde la maquina local se deberían seguir los siguientes pasos:_
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Paso 1: Instale IBM Cloud CLI._
+
+_Instale la interfaz de la línea de comandos de IBM Cloud así:_
+
+_**Para Mac y Linux ™**_
+_Ejecute el siguiente comando en la terminal:_
+```
+curl -sL https://ibm.biz/idt-installer | bash
+```
+_**Para Windows™ 10 Pro**_
+_Pulse con el botón derecho del ratón el icono de Windows™ PowerShell y seleccione **Ejecutar como administrador**, efectué el siguiente comando:_
 
 ```
-Da un ejemplo
+[Net.ServicePointManager]::SecurityProtocol="Tls12";iex(New-Object Net.WebClient).DownloadString('https://ibm.biz/idt-win-installer')
 ```
 
+_Paso 2: Verificar la instalación._
+_Para verificar que las herramientas de desarrollador y la CLI se han instalado correctamente, ejecute el comando **help**:_
+
+```
+ibmcloud dev help
+```
 ### Instalación 🔧
 
 _Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
