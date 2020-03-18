@@ -11,25 +11,37 @@ _Iniciualmente debe acceder al shell de IBM Cloud desde el siguinete link:_
 https://cloud.ibm.com/shell
 ```
 _1.	Inicie sesión desde la consola de IBM Cloud Shell, para hacerlo utilizamos el siguiente comando:_
-```
-ibmcloud login
-```
-_Si se rechazan sus credenciales, puede que esté utilizando un ID federado. Para iniciar sesión con un ID federado, utilice el distintivo --sso. Consulte Inicio de sesión con un ID federado para obtener más detalles. Una vez instalado, puede acceder a IBM Cloud desde su línea de comandos con el prefijo bx._
+
 ```
 ibmcloud login --sso
 ```
+_Se generará una pregunta, responde **Y**._
+
+_Ingrese al siguiente link donde encontrara la clave de acceso a la consola de IBM Cloud. _
+
+```
+https://identity-3.us-south.iam.cloud.ibm.com/identity/passcode_
+```
+_Una vez tenga el código, copie y pegue en la consola IBM Cloud Shell._
+
+_Debe escoger el número que perteneza a la cuenta a la que se quiere ingresar_
+
+
 _2.	Configure el entorno de trabajo. Para esto debe colocar el siguiente comando en la terminal._
-```
-ibmcloud target
-```
-_Si se ve que faltan faltan algunos campos por configurar,  para hacerlo se debe digitar los siguientes comandos._
-```
-ibmcloud target -r us-east -g openshift-workshop
-```
-_y por ultimo digitar el siguiente comando:_
 ```
 ibmcloud target --cf
 ```
+_Si se ve que faltan faltan algunos campos por configurar, edite la zona y el grupo de recurso con el siguiente comando:_
+```
+ibmcloud target -r us-east -g openshift-workshop
+```
+
+_Vuelva a digitar el siguiente comando:_
+```
+ibmcloud target --cf
+```
+_ Una vez digitado el anterior comando, se pide seleccionar una organización. Digite el número de la organización a la que se desea acceder_
+
 _De este modo damos por terminada la configuración inicial para el despliegue de la aplicación._
 
 _3.	Inicie sesión e ingrese desde la CLI de OpenShift al clúster en el que se va a trabajar._
