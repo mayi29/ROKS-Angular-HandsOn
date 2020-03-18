@@ -6,7 +6,11 @@ _Para el desarrollo de este proyecto se tiene como base el desarrollo de una apl
 
 ## Despliegue en OpenShift desde IBM Cloud shell: 🚀
 
-_1.	Inicie sesión desde la consola como administrador o Windows Power Shell y ejecute el siguiente comando._
+_Iniciualmente debe acceder al shell de IBM Cloud desde el siguinete link:_
+```
+https://cloud.ibm.com/shell
+```
+_1.	Inicie sesión desde la consola de IBM Cloud Shell, para hacerlo utilizamos el siguiente comando:_
 ```
 ibmcloud login
 ```
@@ -42,6 +46,8 @@ _•	Diríjase al resource list._
 _•	Diríjase a la sección de clústers y dar clic en el que se desea acceder._
 _•	Se da clic en el botón OpenShift web console._
 _•	Ahora en la parte superior derecha se da clic sobre el ID del correo con el que ingresamos y luego en la sección que dice Copy Login Command._
+
+
 <img width="144" alt="1" src="https://user-images.githubusercontent.com/60987042/76917049-53479180-6890-11ea-91a1-b2c2c9213729.PNG">
 
 _•	Y por último volvemos a la terminal que se estaba utilizando pegamos y damos enter._
@@ -59,8 +65,10 @@ oc project <projectname>
 ```
 
 _6.	Clone el repositorio de la aplicación que se desea desplegar._
-_**App de hello Word en angular:** https://github.com/emeloibmco/AngularHelloWorld_
-_**App de listas en angular:** https://github.com/emeloibmco/AngularWebList_
+
+_**App de hello Word en angular:** https://github.com/emeloibmco/AngularHelloWorld _
+
+_**App de listas en angular:** https://github.com/emeloibmco/AngularWebList _
 
 _7.	Desde el Shell de IBM cloud digitar el comando:_
 
