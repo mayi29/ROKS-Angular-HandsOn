@@ -308,5 +308,5 @@ _De esta forma se daría por terminado el despliegue de la aplicación angular e
 
 ## Autores ✒️
 
-_Equipo IBM Cloud Tech sales Colombia_
+_Equipo IBM Cloud Tech sales Colombia._
 
