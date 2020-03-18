@@ -56,6 +56,9 @@ https://cloud.ibm.com/
 _•	Diríjase al resource list._
 _Primero debe dar clic en el navigation menu y luego donde dice Resource list, como se puede ver en la siguiente imagen:_
 
+<img width="957" alt="6" src="https://user-images.githubusercontent.com/60987042/76995646-2b9f0a80-691e-11ea-9ee3-320af04665ce.PNG">
+
+
 _•	Diríjase a la sección de clústers y dar clic en el que se desea acceder._
 
 _•	Se da clic en el botón OpenShift web console._
@@ -218,9 +221,17 @@ _3.	Inicie sesión e ingrese desde la CLI de OpenShift al clúster en el que se 
 
 _Para ingresar al clúster que tengamos aprovisionado en nuestra cuenta de IBM Cloud se deben realizar los siguientes pasos:_
 
-_•	Ingresar a la plataforma de IBM cloud con sus credenciales de inicio de sesión._
+_•	Ingresar a la plataforma de IBM cloud con sus credenciales de inicio de sesión, lo puede hacer desde el siguiente link:_
+
+```
+https://cloud.ibm.com/
+```
 
 _•	Diríjase al resource list._
+_Primero debe dar clic en el navigation menu y luego donde dice Resource list, como se puede ver en la siguiente imagen:_
+
+<img width="957" alt="6" src="https://user-images.githubusercontent.com/60987042/76995646-2b9f0a80-691e-11ea-9ee3-320af04665ce.PNG">
+
 
 _•	Diríjase a la sección de clústers y dar clic en el que se desea acceder._
 
