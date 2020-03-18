@@ -45,13 +45,7 @@ _De este modo damos por terminada la configuración inicial para el despliegue d
 
 _3.	Inicie sesión e ingrese desde la CLI de OpenShift al clúster en el que se va a trabajar._
 
-_Este paso se realiza por medio del siguiente comando:_
-```
-oc login https://c100-e.us-east.containers.cloud.ibm.com:31320 --token=xn9VJ1NhrWktYArWnBH_e25e6ra3uYCuEQ0ZrFrQ-vA
-```
-_**NOTA: Este comando es único para acceder al cluster que lleva por nombre openshift3.11 el cual se dispuso para el desarrollo de este laboratorio.**_
-
-_Si se desea acceder a otro clúster que tengamos aprovisionado en nuestra cuenta de IBM Cloud se deben realizar los siguientes pasos:_
+_Para ingresar al clúster que tengamos aprovisionado en nuestra cuenta de IBM Cloud se deben realizar los siguientes pasos:_
 
 _•	Ingresar a la plataforma de IBM cloud con sus credenciales de inicio de sesión._
 
@@ -217,14 +211,7 @@ _De este modo damos por terminada la configuración inicial para el despliegue d
 
 _3.	Inicie sesión e ingrese desde la CLI de OpenShift al clúster en el que se va a trabajar._
 
-_Este paso se realiza por medio del siguiente comando:_
-
-```
-oc login https://c100-e.us-east.containers.cloud.ibm.com:31320 --token=xn9VJ1NhrWktYArWnBH_e25e6ra3uYCuEQ0ZrFrQ-vA
-```
-_**NOTA: Este comando es único para acceder al cluster que lleva por nombre openshift3.11 el cual se dispuso para el desarrollo de este laboratorio.**_
-
-_Si se desea acceder a otro clúster que tengamos aprovisionado en nuestra cuenta de IBM Cloud se deben realizar los siguientes pasos:_
+_Para ingresar al clúster que tengamos aprovisionado en nuestra cuenta de IBM Cloud se deben realizar los siguientes pasos:_
 
 _•	Ingresar a la plataforma de IBM cloud con sus credenciales de inicio de sesión._
 
